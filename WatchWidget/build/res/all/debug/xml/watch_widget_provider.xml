@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<appwidget-provider
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:previewImage="@drawable/ic_launcher"
+        android:minWidth="140dp"
+        android:minHeight="80dp"
+        android:initialLayout="@layout/main"
+        updatePeriodMillis="0"
+
+        /><!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/xml/watch_widget_provider.xml -->

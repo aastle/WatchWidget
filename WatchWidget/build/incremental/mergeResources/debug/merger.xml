@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res" >
+            <file
+                name="ic_launcher"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-mdpi\background.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="background_icon"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-mdpi\background_icon.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="app_name" >WatchWidget
+                </string>
+
+                <string-array name="love_notes" >
+                    <item>
+Mahal na Mahal kita asawa ko
+                    </item>
+                    <item>
+I love you very much honey bee!
+                    </item>
+                    <item>
+Kisses for my honey bee asawa
+                    </item>
+                    <item>
+Always remember that I love you forever
+                    </item>
+                    <item>
+I am always praying for you asawa ko
+                    </item>
+                </string-array>
+            </file>
+            <file
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.watch_widget_provider, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="watch_widget_provider"
+                path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\main\res\xml\watch_widget_provider.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\build\res\rs\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\prometheus\AndroidStudioProjects\WatchWidgetProject\WatchWidget\src\debug\res" />
+    </dataSet>
+
+</merger>

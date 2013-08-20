@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WatchWidget/WatchWidget.iml" filepath="$PROJECT_DIR$/WatchWidget/WatchWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WatchWidgetProject.iml" filepath="$PROJECT_DIR$/WatchWidgetProject.iml" />
+    </modules>
+  </component>
+</project>
+

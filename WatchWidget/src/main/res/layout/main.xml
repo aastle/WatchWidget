@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout01"
+              android:background="@drawable/background"
+              android:orientation="horizontal"
+              android:layout_width="160dp"
+              android:layout_height="200dp">
+    <TextView
+            android:id="@+id/widget_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:text="I love you honey ko"
+            android:textSize="10pt"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textAlignment="center"
+            android:typeface="serif"
+            android:textStyle="bold|italic"/>
+
+</LinearLayout>

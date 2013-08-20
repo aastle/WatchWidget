@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/values/strings.xml -->
+    <string-array name="love_notes">
+        <item>Mahal na Mahal kita asawa ko</item>
+        <item>I love you very much honey bee!</item>
+        <item>Kisses for my honey bee asawa</item>
+        <item>Always remember that I love you forever</item>
+        <item>I am always praying for you asawa ko</item>
+    </string-array>
+
+    <string name="app_name">WatchWidget</string>
+    <!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/values/styles.xml -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.watch_widget_provider, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
