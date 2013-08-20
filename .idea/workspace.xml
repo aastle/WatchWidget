@@ -29,8 +29,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74292491-cb01-40b5-ba4c-ed063b9f5ef7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" afterPath="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WatchWidget.iws" />
@@ -484,6 +482,11 @@
       <created>1376396301097</created>
       <updated>1376396301097</updated>
     </task>
+    <task id="LOCAL-00001" summary="Deleted commented method which exists in a utility class">
+      <created>1377018056317</created>
+      <updated>1377018056317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
