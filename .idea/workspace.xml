@@ -28,7 +28,11 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74292491-cb01-40b5-ba4c-ed063b9f5ef7" name="Default" comment="" />
+    <list default="true" id="74292491-cb01-40b5-ba4c-ed063b9f5ef7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" afterPath="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="WatchWidget.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +44,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
     <leftPanel />
-    <rightPanel />
+    <rightPanel url="file://$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/android" />
     <splitter proportion="0.5" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -99,7 +103,7 @@
       <file leaf-file-name="WatchWidget.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="0.33333334" vertical-offset="177" max-vertical-offset="2193">
+            <state line="81" column="34" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.21666667" vertical-offset="1260" max-vertical-offset="2074">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,6 +131,14 @@
     <option name="KEY_STORE_PATH" value="C:\Users\prometheus\AndroidStudioProjects\Keys\releasekeys.jks" />
     <option name="KEY_ALIAS" value="asawamessage" />
     <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -169,8 +181,8 @@
         <option value="$PROJECT_DIR$/WatchWidget/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/WatchWidget/src/main/res/xml/watch_widget_provider.xml" />
         <option value="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/android/utility.java" />
-        <option value="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" />
         <option value="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/utility.java" />
+        <option value="$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java" />
       </list>
     </option>
   </component>
@@ -183,7 +195,7 @@
     <option name="width" value="966" />
     <option name="height" value="736" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -488,7 +500,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22401172" sideWeight="0.67202574" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32642487" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3971061" sideWeight="0.57894737" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -512,6 +524,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Deleted commented method which exists in a utility class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted commented method which exists in a utility class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -631,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WatchWidget/src/main/java/com/aastle/watchwidget/WatchWidget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="0.33333334" vertical-offset="177" max-vertical-offset="2193">
+        <state line="81" column="34" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.21666667" vertical-offset="1260" max-vertical-offset="2074">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

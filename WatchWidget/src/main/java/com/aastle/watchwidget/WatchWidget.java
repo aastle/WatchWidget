@@ -103,21 +103,14 @@ public class WatchWidget extends AppWidgetProvider
 
 
     private String randomLoveNote (){
-        int randomNumber = -1;
-        String love = "";
+        int randomNumber;
+        String love;
         String[] love_notes = res.getStringArray(R.array.love_notes);
         randomNumber = utility.randomNumber(0, love_notes.length -1 );
         love = love_notes[randomNumber];
         return love;
     }
 
-    /*private int randomColor(){
-        int randomNumber = -1;
-        int color = 0;
-        int[] colors = {Color.RED,Color.DKGRAY,Color.CYAN,Color.MAGENTA,Color.GREEN};
-        randomNumber = utility.randomNumber(0, colors.length - 1);
-        color = colors[randomNumber];
-        return color;
-    }*/
+
 
 }
