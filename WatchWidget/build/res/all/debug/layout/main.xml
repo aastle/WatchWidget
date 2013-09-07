@@ -2,22 +2,27 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/LinearLayout01"
-              android:background="@drawable/background"
+              android:background="@drawable/gradientrectangle"
               android:orientation="horizontal"
-              android:layout_width="160dp"
-              android:layout_height="200dp">
+              android:layout_width="125dp"
+              android:layout_height="140dp"
+              android:gravity="center"
+    android:alpha="0.7">
     <TextView
             android:id="@+id/widget_textview"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="@android:color/black"
-            android:text="I love you honey ko"
-            android:textSize="10pt"
-            android:paddingLeft="18dp"
-            android:paddingRight="18dp"
+            android:textColor="#ff070f"
+            android:text="Always Remember That I Love You Forever"
+            android:textSize="6pt"
             android:textAlignment="center"
             android:typeface="serif"
-            android:textStyle="bold|italic"/>
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal|left"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="#aaaaaa" />
 
 </LinearLayout><!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/layout/main.xml -->

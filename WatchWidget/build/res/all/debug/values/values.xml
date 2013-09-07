@@ -10,7 +10,7 @@
         <item>I am always praying for you asawa ko</item>
     </string-array>
 
-    <string name="app_name">WatchWidget</string>
+    <string name="app_name">Asawa Widget</string>
     <!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

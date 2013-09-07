@@ -15,7 +15,7 @@ public  class utility {
     public static int randomColor(){
         int randomNumber = -1;
         int color = 0;
-        int[] colors = {Color.RED,Color.DKGRAY,Color.CYAN,Color.MAGENTA,Color.GREEN};
+        int[] colors = {Color.RED,Color.DKGRAY,Color.GRAY,Color.MAGENTA,Color.GREEN};
         randomNumber = utility.randomNumber(0, colors.length - 1);
         color = colors[randomNumber];
         return color;

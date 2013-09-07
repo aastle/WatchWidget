@@ -12,9 +12,13 @@ import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.widget.RemoteViews;
+import android.widget.TextView;
+
 import java.util.Calendar;
 import com.aastle.android.utility;
 
@@ -24,11 +28,11 @@ public class WatchWidget extends AppWidgetProvider
     Context mContext;
     Resources res;
     public static String ASAWA_WIDGET_UPDATE = "com.aastle.watchwidget.ASAWA_WIDGET_UPDATE";
-    public static String LOG_TAG = "asawaWidget";
+    public static String LOG_TAG = "asawa";
 
 
     private PendingIntent createClockTickIntent(Context context) {
-
+        //Log.d(LOG_TAG, "createClockTickIntent()");
         Intent intent = new Intent(ASAWA_WIDGET_UPDATE);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         return pendingIntent;
@@ -48,6 +52,7 @@ public class WatchWidget extends AppWidgetProvider
 
     @Override
     public void onEnabled(Context context){
+        //Log.d(LOG_TAG, "onEnabled()");
         super.onEnabled(context);
         mContext = context;
         res = mContext.getResources();
@@ -57,12 +62,10 @@ public class WatchWidget extends AppWidgetProvider
         calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.add(Calendar.SECOND, 1);
 
-        alarmManager.setRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), 1000 * 5, createClockTickIntent(context));
+        alarmManager.setRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), 1800000, createClockTickIntent(context));
 
         RemoteViews view = new RemoteViews(context.getPackageName(), R.layout.main);
-
         String note = randomLoveNote();
-
         view.setTextViewText(R.id.widget_textview, note);
         view.setTextColor(R.id.widget_textview,utility.randomColor());
         // Push update for this widget to the home screen
@@ -73,7 +76,7 @@ public class WatchWidget extends AppWidgetProvider
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager,int[] appWidgetIds){
-
+        //Log.d(LOG_TAG, "onUpdate()");
         createClockTickIntent(context);
         updateAppWidget(context,appWidgetManager,appWidgetIds[0]);
     }
@@ -83,7 +86,7 @@ public class WatchWidget extends AppWidgetProvider
         super.onReceive(context, intent);
 
         if (ASAWA_WIDGET_UPDATE.equals(intent.getAction())) {
-            Log.d("onReceive", "Clock update");
+            //Log.d(LOG_TAG, "onReceive()");
             ComponentName thisAppWidget = new ComponentName(context.getPackageName(), getClass().getName());
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
             int ids[] = appWidgetManager.getAppWidgetIds(thisAppWidget);
@@ -95,7 +98,7 @@ public class WatchWidget extends AppWidgetProvider
     @Override
     public void onDisabled(Context context) {
         super.onDisabled(context);
-        Log.d(LOG_TAG, "Widget Provider disabled. Turning off timer");
+        //Log.d(LOG_TAG, "Widget Provider disabled. Turning off timer");
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         alarmManager.cancel(createClockTickIntent(context));
     }
