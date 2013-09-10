@@ -2,6 +2,12 @@
 <resources>
 
     <!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/values/strings.xml -->
+    <string-array name="backgrounds">
+        <item>background01</item>
+        <item>background02</item>
+        <item>background03</item>
+        <item>gradientrectangle</item>
+    </string-array>
     <string-array name="love_notes">
         <item>Mahal na Mahal kita asawa ko</item>
         <item>I love you very much honey bee!</item>

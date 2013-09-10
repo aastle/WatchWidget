@@ -14,7 +14,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.TextView;
@@ -47,6 +49,7 @@ public class WatchWidget extends AppWidgetProvider
         watchWidget = new ComponentName(context,WatchWidget.class);
         remoteViews.setTextViewText(R.id.widget_textview, randomLoveNote());
         remoteViews.setTextColor(R.id.widget_textview,utility.randomColor());
+        remoteViews.setInt(R.id.LinearLayout01,"setBackgroundResource",utility.getRandomBackgroundId(this.randomBackgroundName(),mContext,mContext.getPackageName()));
         appWidgetManager.updateAppWidget(watchWidget, remoteViews);
     }
 
@@ -112,6 +115,18 @@ public class WatchWidget extends AppWidgetProvider
         randomNumber = utility.randomNumber(0, love_notes.length -1 );
         love = love_notes[randomNumber];
         return love;
+    }
+
+
+
+    private String randomBackgroundName(){
+
+        int randomNumber;
+        String back = "";
+        String[] backgrounds = res.getStringArray(R.array.backgrounds);
+        randomNumber = utility.randomNumber(0,backgrounds.length-1);
+        back = backgrounds[randomNumber];
+        return back;
     }
 
 

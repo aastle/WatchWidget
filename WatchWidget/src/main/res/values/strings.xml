@@ -7,4 +7,10 @@
         <item>Always remember that I love you forever</item>
         <item>I am always praying for you asawa ko</item>
     </string-array>
+    <string-array name="backgrounds">
+        <item>background01</item>
+        <item>background02</item>
+        <item>background03</item>
+        <item>gradientrectangle</item>
+    </string-array>
 </resources>

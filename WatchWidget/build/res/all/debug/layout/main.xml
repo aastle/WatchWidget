@@ -2,7 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/LinearLayout01"
-              android:background="@drawable/gradientrectangle"
+              android:background="@drawable/background01"
               android:orientation="horizontal"
               android:layout_width="125dp"
               android:layout_height="140dp"
@@ -14,7 +14,7 @@
             android:layout_height="fill_parent"
             android:textColor="#ff070f"
             android:text="Always Remember That I Love You Forever"
-            android:textSize="6pt"
+            android:textSize="8pt"
             android:textAlignment="center"
             android:typeface="serif"
             android:textStyle="bold|italic"

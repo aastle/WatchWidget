@@ -11,14 +11,18 @@ public final class R {
     public static final class array {
         /**  From: file:/C:/Users/prometheus/AndroidStudioProjects/WatchWidgetProject/WatchWidget/src/main/res/values/strings.xml 
          */
-        public static final int love_notes=0x7f050000;
+        public static final int backgrounds=0x7f050000;
+        public static final int love_notes=0x7f050001;
     }
     public static final class attr {
     }
     public static final class drawable {
-        public static final int background_icon=0x7f020000;
-        public static final int gradientrectangle=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int background01=0x7f020000;
+        public static final int background02=0x7f020001;
+        public static final int background03=0x7f020002;
+        public static final int background_icon=0x7f020003;
+        public static final int gradientrectangle=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
         public static final int LinearLayout01=0x7f080000;
