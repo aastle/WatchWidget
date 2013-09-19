@@ -18,6 +18,10 @@ import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.RemoteViews;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -108,7 +112,7 @@ public class WatchWidget extends AppWidgetProvider
                 updateAppWidget(context, appWidgetManager, appWidgetID);
             }
         }else if(WIDGET_CLICK_ACTION.equals(intent.getAction())){
-            Toast.makeText(context,"I love you honey ko",Toast.LENGTH_LONG).show();
+            utility.showTextMessage(context,"I love you honey ko!");
         }
     }
     @Override
@@ -141,6 +145,7 @@ public class WatchWidget extends AppWidgetProvider
         back = backgrounds[randomNumber];
         return back;
     }
+
 
 
 

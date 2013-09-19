@@ -4,6 +4,15 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RemoteViews;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.aastle.watchwidget.R;
 
 /**
  * Created by prometheus on 8/20/13.
@@ -39,4 +48,19 @@ public  class utility {
 
        return context.getResources().getIdentifier(backgroundName,"drawable",rPackage);
     }
+    public static void showTextMessage(Context context, String message){
+        LayoutInflater inflater =  (LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE);
+        View layout = inflater.inflate(R.layout.toast_layout,null);
+        // (ViewGroup) findViewById(R.id.toast_layout_root)
+
+        TextView text = (TextView) layout.findViewById(R.id.toast_text);
+        text.setText(message);
+
+        Toast toast = new Toast(context);
+        toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+
 }
