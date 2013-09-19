@@ -20,6 +20,7 @@ import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 import com.aastle.android.utility;
@@ -31,6 +32,7 @@ public class WatchWidget extends AppWidgetProvider
     Resources res;
     public static String ASAWA_WIDGET_UPDATE = "com.aastle.watchwidget.ASAWA_WIDGET_UPDATE";
     public static String LOG_TAG = "asawa";
+    public static String WIDGET_CLICK_ACTION = "WIDGET_CLICK_ACTION";
 
 
     private PendingIntent createClockTickIntent(Context context) {
@@ -38,6 +40,14 @@ public class WatchWidget extends AppWidgetProvider
         Intent intent = new Intent(ASAWA_WIDGET_UPDATE);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         return pendingIntent;
+    }
+
+    private PendingIntent createClickIntent(Context context){
+        Intent intent = new Intent(context,WatchWidget.class);
+        intent.setAction(WIDGET_CLICK_ACTION);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
+        return pendingIntent;
+
     }
 
     private void updateAppWidget(Context context,AppWidgetManager appWidgetManager,int appWidgetId){
@@ -50,6 +60,7 @@ public class WatchWidget extends AppWidgetProvider
         remoteViews.setTextViewText(R.id.widget_textview, randomLoveNote());
         remoteViews.setTextColor(R.id.widget_textview,utility.randomColor());
         remoteViews.setInt(R.id.LinearLayout01,"setBackgroundResource",utility.getRandomBackgroundId(this.randomBackgroundName(),mContext,mContext.getPackageName()));
+        remoteViews.setOnClickPendingIntent(R.id.widget_textview, createClickIntent(context));
         appWidgetManager.updateAppWidget(watchWidget, remoteViews);
     }
 
@@ -80,7 +91,7 @@ public class WatchWidget extends AppWidgetProvider
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager,int[] appWidgetIds){
         //Log.d(LOG_TAG, "onUpdate()");
-        createClockTickIntent(context);
+        //createClockTickIntent(context);
         updateAppWidget(context,appWidgetManager,appWidgetIds[0]);
     }
 
@@ -96,6 +107,8 @@ public class WatchWidget extends AppWidgetProvider
             for (int appWidgetID: ids) {
                 updateAppWidget(context, appWidgetManager, appWidgetID);
             }
+        }else if(WIDGET_CLICK_ACTION.equals(intent.getAction())){
+            Toast.makeText(context,"I love you honey ko",Toast.LENGTH_LONG).show();
         }
     }
     @Override
