@@ -4,8 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="8dp"
-    android:background="#DAAA"
+    android:background="@drawable/gradientrectangle"
     >
+    <!-- background="#DAAA -->
     <ImageView android:src="@drawable/ic_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,6 +15,8 @@
     <TextView android:id="@+id/toast_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFF"
-        />
+        android:textColor="#ff591206"
+        android:gravity="center_vertical|right"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical" />
 </LinearLayout>
